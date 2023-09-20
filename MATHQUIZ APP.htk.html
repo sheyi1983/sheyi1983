@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APPLICATION</title>
+</head>
+<body>
+    <style>
+   body { margin: 100;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: greenyellow;
+    font-family: cursive;
+    </style>
+}
+
+    Q1. What is 10+3 ?<br>
+    <input type="radio" name="question1"> 5<br>
+    <input type="radio" name="question1"> 12<br>
+    <input type="radio" name="question1" id="correct1">13<br>
+    <input type="radio" name="question1">14<br>
+
+    Q2. What is 12+3 ?<br>
+    <input type="radio" name="question2"> 5<br>
+    <input type="radio" name="question2"> 12<br>
+    <input type="radio" name="question2" id="correct2">15<br>
+    <input type="radio" name="question2">14<br>
+
+    Q3. What is 23+3 ?<br>
+    <input type="radio" name="question3"> 5<br>
+    <input type="radio" name="question3"> 12<br>
+    <input type="radio" name="question3" id="correct3">26<br>
+    <input type="radio" name="question3">14<br>
+
+    Q4. What is 10+4 ?<br>
+    <input type="radio" name="question4"> 5<br>
+    <input type="radio" name="question4"> 12<br>
+    <input type="radio" name="question4" id="correct4">14<br>
+    <input type="radio" name="question4">16<br>
+
+    Q5. What is 56+3 ?<br>
+    <input type="radio" name="question5"> 5<br>
+    <input type="radio" name="question5"> 12<br>
+    <input type="radio" name="question5" id="correct5">59<br>
+    <input type="radio" name="question5"> 14<br>
+<input type="submit" name="submit" value="submitQuiz" onclick= " result()">
+
+<script type="text/javascript">
+     function result() {
+
+        var score = 0;
+        if (document.getElementById('correct1').checked)
+        {
+             score++;
+        }
+        if (document.getElementById('correct2').checked)
+        {
+            score++;
+        }
+        if (document.getElementById('correct3').checked)
+        {
+            score++;
+          }
+        if (document.getElementById('correct4').checked)
+        {
+            score++;
+        }
+        if (document.getElementById('correct5').checked)
+        {
+            score++;
+        }
+    
+        alert("Your score is :" +score);
+
+        document.write("Your score:" +score);
+
+
+    }
+</script>
+
+</body>
+</html>
